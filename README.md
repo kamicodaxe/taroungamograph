@@ -15,4 +15,4 @@ yarn dev
 
 # About
 
-This project was build for my friend Tarounga Mbaye to showcase his work as an awesome Motion Graphics Designer
+This project was build for my friend Tarounga Mbaye to showcase his work as an awesome Motion Graphics Designer# taroungamograph
