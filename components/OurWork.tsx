@@ -10,7 +10,7 @@ const OurWork: React.FC<{}> = ({ }) => {
             </div>
             <div className="container mx-auto flex flex-col md:flex-row lg:px-16">
                 <div className="flex bg-white">
-                    <Image src="https://source.unsplash.com/TlRQin0iwjE/1080x1920" width={1280} height={720} className="object-cover" />
+                    <Image src="https://source.unsplash.com/TlRQin0iwjE/1080x1920" alt="Image from unsplash" width={1280} height={720} className="object-cover" />
                 </div>
                 <div className="flex flex-col p-2 pb-4 md:pl-8">
                     <h3 className="text-2xl font-bold text-gray-100 mb-2">Bogital</h3>

@@ -34,7 +34,7 @@ const Footer: React.FC<{}> = ({ }) => {
                     <ul className="flex flex-wrap items-center space-x-4 sm:space-x-8">
                         {
                             routes.map(route => (
-                                <li className="cursor-pointer">
+                                <li key={route.name} className="cursor-pointer">
                                     <Link href={route.path}>
                                         <span className="px-4">
                                             {route.name}
