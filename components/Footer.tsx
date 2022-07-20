@@ -1,0 +1,66 @@
+import Image from "next/image"
+import Link from "next/link"
+import logoImage from '../assets/images/logo.svg'
+
+const routes = [
+    {
+        name: "Projects",
+        path: "/projects"
+    },
+    {
+        name: "A Propos",
+        path: "/about"
+    },
+    {
+        name: "Contact",
+        path: "/contact"
+    }
+]
+
+const Footer: React.FC<{}> = ({ }) => {
+
+    return (
+        <footer className="px-4 pt-8 bg-black text-gray-400">
+            <div className="container flex flex-wrap items-center justify-center mx-auto space-y-4 sm:justify-between sm:space-y-0">
+                <div className="flex flex-row pr-3 space-x-4 sm:space-x-8">
+                    <div className="flex items-center justify-center flex-shrink-0 h-24 w-48 relative">
+                        <Image
+                            layout="fill"
+                            src={logoImage}
+                            className="object-contain"
+                            alt="Logo - Taroungamograph by Tarounga Mbaye "
+                        />
+                    </div>
+                    <ul className="flex flex-wrap items-center space-x-4 sm:space-x-8">
+                        {
+                            routes.map(route => (
+                                <li className="cursor-pointer">
+                                    <Link href={route.path}>
+                                        <span className="px-4">
+                                            {route.name}
+                                        </span>
+                                    </Link>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </div>
+                <ul className="flex flex-wrap pl-3 space-x-4 sm:space-x-8">
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+            <p className="text-xs text-center pb-2">Coded with ❤️ by <a href="https://bogital.com">Bogital</a></p>
+        </footer>
+    )
+}
+
+
+export default Footer
