@@ -34,7 +34,7 @@ const NavBar: React.FC<Props> = ({ active }) => {
         <nav className="p-4 bg-black text-gray-100">
             <div className="container flex justify-between md:justify-start h-12 mx-auto">
                 <Link href="/" aria-label="Back to homepage" className="flex items-center p-2">
-                    <div className="flex items-center cursor-pointer">
+                    <div className="flex items-center cursor-pointer z-50">
                         <div className="h-24 w-64 relative">
                             <Image
                                 layout="fill"
@@ -45,7 +45,7 @@ const NavBar: React.FC<Props> = ({ active }) => {
                         </div>
                     </div>
                 </Link>
-                <ul className="items-stretch hidden space-x-3 md:flex ml-4">
+                <ul className="items-stretch hidden space-x-3 md:flex ml-4 z-50">
                     {
                         routes.map(route => (
                             <li className={activeLink(route.name)} key={route.name}>

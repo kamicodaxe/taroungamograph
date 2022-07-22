@@ -5,7 +5,7 @@ import ceoImage from '../assets/images/ceo.png'
 const AboutCEO: React.FC<{}> = ({ }) => {
 
     return (
-        <section className="bg-black dark:text-gray-100">
+        <section className="bg-black text-gray-100">
             <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
                 <div className="flex flex-col justify-center p-6 space-y-4 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
                     <p className="text-lg">

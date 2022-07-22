@@ -1,15 +1,16 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import ceoImage from '../assets/images/ceo.png'
-
+import ParticlesBackground from './ParticlesBackground'
 
 const HomeHeader: React.FC<{}> = ({ }) => {
 
     return (
-        <section className="text-gray-800">
-            {/* <MapView /> */}
-            <div className="container flex flex-col justify-center align-center p-6 lg:flex-row lg:justify-between ">
+        <section className="text-gray-800 bg-transparent">
+            <ParticlesBackground />
+            <div className="container flex flex-col justify-center align-center p-6 lg:flex-row lg:justify-between  ">
                 <div className="flex flex-col justify-start pl-6 pt-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left lg:pt-32">
-                    <h1 className="text-6xl font-bold leading-none text-center lg:text-left md:text-5xl">
+                    <h1 className="text-6xl font-bold leading-none text-center lg:text-left md:text-5xl z-50">
                         Je suis Tarounga Mbaye,
                         <span className="text-primary"> Motion Designer!</span>
                     </h1>
@@ -17,9 +18,9 @@ const HomeHeader: React.FC<{}> = ({ }) => {
                         <br className="hidden md:inline lg:hidden" />turpis pulvinar, est scelerisque ligula sem
                     </p> */}
                     <div className="hidden sm:flex flex-col mt-12 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                        <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded bg-primary text-white">
-                            Contactez moi
-                        </a>
+                        <button className="px-8 py-3 text-lg font-semibold rounded bg-primary text-white z-50">
+                            <Link href="/contact">Contactez moi</Link>
+                        </button>
                     </div>
 
                 </div>
